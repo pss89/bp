@@ -3,7 +3,9 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Main from './components/Main';
+import About from './components/About';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import EmptyPage from './components/EmptyPage';
 
@@ -15,9 +17,11 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/buchet_portfolio" element={<Main/>} />
+          <Route path="/" element={<Main/>} />
+          <Route path="/about" element={<About/>} />
           <Route path="*" element={<EmptyPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )
