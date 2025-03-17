@@ -6,5 +6,9 @@ const navbarItems = [
   { title: '주요프로젝트2', path: '/bp/project/seconde' },
   { title: '주요프로젝트3', path: '/bp/project/third' }
 ]
+// const deviceVersion = navigator.userAgent
 
-export default { navbarItems }
+// dark mode인지 확인하는 방법
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+export default { navbarItems, isDarkMode }
