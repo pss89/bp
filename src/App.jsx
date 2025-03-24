@@ -46,7 +46,7 @@ function App() {
         <Routes>
           <Route path="/bp" element={<Main/>} />
           <Route path="/bp/intro" element={<Intro/>} />
-          <Route path="/bp/career" element={<Career/>} />
+          <Route path="/bp/career" element={<Career careerList={constants.careerList}/>} />
           <Route path="/bp/projects" element={<Projects/>} />
           <Route path="/bp/project/first" element={<Project type="first"/>} />
           <Route path="/bp/project/seconde" element={<Project type="seconde"/>} />
