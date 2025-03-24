@@ -22,10 +22,12 @@ function App() {
   
     // useEffect를 이용해 resize 이벤트를 등록
     useEffect(() => {
+      // resize 이벤트 핸들러
       const handleResize = () => {
         setIsMobile(window.innerWidth < 768);
       };
   
+      // resize 이벤트 등록
       window.addEventListener("resize", handleResize);
       return () => {
         window.removeEventListener("resize", handleResize);
@@ -36,8 +38,6 @@ function App() {
   };
   
   const deviceType = useDeviceType();
-
-  // console.log(constants.isDarkMode);
 
   return (
     <>
@@ -53,7 +53,7 @@ function App() {
           <Route path="/bp/project/third" element={<Project type="third"/>} />
           <Route path="*" element={<EmptyPage />} />
         </Routes>
-        <Footer deviceType={deviceType}/>
+        <Footer deviceType={deviceType} reactVersion={constants.reactVersion}/>
       </BrowserRouter>
     </>
   )

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Project = ({ type }) => {
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-screen bg-gray-800 text-white">
         <div className="w-full text-center">
           <h1>Project {type}</h1>
         </div>
