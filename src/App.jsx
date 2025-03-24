@@ -1,6 +1,3 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import { useState, useEffect } from 'react';
 import constants from './constants'
@@ -36,7 +33,8 @@ function App() {
   
     return isMobile;
   };
-  
+
+  // divice type 체크
   const deviceType = useDeviceType();
 
   return (
@@ -44,7 +42,7 @@ function App() {
       <BrowserRouter>
         <Navbar navbarItems={constants.navbarItems}/>
         <Routes>
-          <Route path="/bp" element={<Main/>} />
+          <Route path="/bp" element={<Main activePath/>} />
           <Route path="/bp/intro" element={<Intro/>} />
           <Route path="/bp/career" element={<Career careerList={constants.careerList}/>} />
           <Route path="/bp/projects" element={<Projects/>} />

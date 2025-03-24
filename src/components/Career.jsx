@@ -3,7 +3,7 @@ import { Timeline } from "flowbite-react";
 import { HiCalendar } from "react-icons/hi";
 
 const Career = ({careerList}) => {
-  console.log(careerList);
+  // console.log(careerList);
   return (
     <>
       <div className="flex items-center justify-center min-h-290 bg-gray-800 text-white mt-10 mb-10">
