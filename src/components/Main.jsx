@@ -7,7 +7,7 @@ import profileImage from '../assets/img//common/pss_caricature.png';
 
 export default function Main() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-800 text-white">
+    <div className="flex items-center justify-center min-h-290 bg-gray-800 text-white">
       <div className="md:w-3/4 lg:w-2/4 text-center">
         <div role="status" className="w-full py-3 px-3 space-y-8 md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center">
           <div className="flex items-center justify-center w-full h-48 rounded-sm sm:w-96">

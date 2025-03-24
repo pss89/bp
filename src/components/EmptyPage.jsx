@@ -9,7 +9,7 @@ export default function EmptyPage() {
 
     return (
         <>
-            <div className="flex items-center justify-center min-h-screen bg-gray-800 text-white">
+            <div className="flex items-center justify-center min-h-290 bg-gray-800 text-white">
                 <div className="w-full text-center">
                     {/* <h2>잘못된 접근입니다.</h2>
                     <Link to="/">돌아가기</Link>
